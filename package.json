@@ -1,0 +1,19 @@
+{
+  "name": "zephyrus",
+  "version": "0.0.1",
+  "description": "Javascript Library",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avoristravel/zephyrus.git"
+  },
+  "author": "Avoris Travel",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/avoristravel/zephyrus/issues"
+  },
+  "homepage": "https://github.com/avoristravel/zephyrus#readme"
+}
