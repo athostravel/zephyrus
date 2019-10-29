@@ -1,19 +1,41 @@
 {
-  "name": "zephyrus",
-  "version": "0.0.1",
-  "description": "Javascript Library",
-  "main": "src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/avoristravel/zephyrus.git"
-  },
-  "author": "Avoris Travel",
-  "license": "GPL-3.0-or-later",
-  "bugs": {
-    "url": "https://github.com/avoristravel/zephyrus/issues"
-  },
-  "homepage": "https://github.com/avoristravel/zephyrus#readme"
+    "name": "zephyrus",
+    "version": "0.0.1",
+    "description": "A unstoppable library",
+    "main": "index.js",
+    "scripts": {
+        "build": "webpack --config webpack.prod.js",
+        "dev": "webpack --config  webpack.dev.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/avoristravel/zephyrus.git"
+    },
+    "author": "Avoris Travel",
+    "license": "GPL-3.0-or-later",
+    "dependencies": {
+        "uglifyjs-webpack-plugin": "^2.2.0"
+    },
+    "homepage": "https://github.com/avoristravel/zephyrus#readme",
+    "bugs": {
+        "url": "https://github.com/avoristravel/zephyrus/issues"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.6.4",
+        "@babel/core": "^7.6.4",
+        "@babel/node": "^7.6.3",
+        "@babel/plugin-proposal-class-properties": "^7.5.5",
+        "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+        "@babel/preset-env": "^7.6.3",
+        "babel-eslint": "^10.0.3",
+        "babel-loader": "^8.0.6",
+        "eslint": "^6.6.0",
+        "eslint-loader": "^3.0.2",
+        "eslint-plugin-import": "^2.18.2",
+        "eslint-plugin-standard": "^4.0.1",
+        "webpack": "^4.41.2",
+        "webpack-cli": "^3.3.9",
+        "webpack-dev-server": "^3.9.0"
+    }
 }

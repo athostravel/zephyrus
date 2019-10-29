@@ -80,7 +80,7 @@ bower_components
 .lock-wscript
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
-build/Release
+build/*
 
 # Dependency directories
 node_modules/
@@ -332,3 +332,4 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/node,macos,linux,windows,prepros,webstorm,phpstorm,sublimetext,visualstudiocode
+idea
