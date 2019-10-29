@@ -1,6 +1,6 @@
 (() => {
     const init = () => {
-        console.log('Zhepyrus is blowing!')
+        console.log('Zhepyrus is blowing!');
     };
     init();
 })();
