@@ -1,8 +1,22 @@
 {
-    "extends": [
-        "standard"
-    ],
-    "rules": {
-        "indent": ["error", 4]
+  "env": {
+    "browser": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "modules": false
     }
+  },
+  "parser": "babel-eslint",
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.config.js"
+      }
+    }
+  },
+  "rules": {
+    "max-len": 0,
+    "no-param-reassign": "off"
+  }
 }

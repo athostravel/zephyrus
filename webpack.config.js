@@ -1,9 +1,9 @@
 const path = require('path');
-const STATIC_PATH = 'rest/src/main/resources/static/js/';
+const STATIC_PATH = './build/';
 
 module.exports = {
   entry: {
-    falcon: './front/apps.js',
+    zephyrus: './src/index.js',
   },
   output: {
     filename: '[name].min.js',
