@@ -9,7 +9,8 @@ const webpackConfig = (env) => {
     let options = {
         stats: 'minimal',
         entry: {
-            build: './src/index.js'
+            build: './src/index.js',
+            demo: './trash/demo.js'
         },
         output: {
             path: resolve('./build'),
@@ -26,7 +27,7 @@ const webpackConfig = (env) => {
             rules: [
                 {
                     test: /\.js$/,
-                    exclude: /node_modules/,
+                    exclude: [/node_modules/, resolve('./build2')],
                     use: [
                         {
                             loader: 'babel-loader',
@@ -36,6 +37,28 @@ const webpackConfig = (env) => {
                         },
                         {
                             loader: 'eslint-loader'
+                        }
+                    ]
+                },
+                {
+                    test: /\.css$/,
+                    use: [
+                        'style-loader',
+                        {
+                            loader: 'css-loader',
+                            options: {
+                                sourceMap: !isProduction
+                            }
+                        },
+                        {
+                            loader: 'postcss-loader',
+                            options: {
+                                ident: 'postcss',
+                                sourceMap: !isProduction,
+                                plugins: (loader) => [
+                                    require('autoprefixer')()
+                                ]
+                            }
                         }
                     ]
                 }
