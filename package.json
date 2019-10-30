@@ -1,0 +1,50 @@
+{
+    "name": "zephyrus",
+    "version": "0.0.1",
+    "description": "A unstoppable library",
+    "main": "build/build.js",
+    "scripts": {
+        "dev": "rimraf build && webpack-dev-server",
+        "build": "rimraf build && webpack --production --progress",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/avoristravel/zephyrus.git"
+    },
+    "author": "Avoris Travel",
+    "license": "GPL-3.0-or-later",
+    "homepage": "https://github.com/avoristravel/zephyrus#readme",
+    "bugs": {
+        "url": "https://github.com/avoristravel/zephyrus/issues"
+    },
+    "browserslist": [
+        "last 2 versions",
+        "> 1%"
+    ],
+    "devDependencies": {
+        "@babel/core": "^7.6.4",
+        "@babel/preset-env": "^7.6.3",
+        "autoprefixer": "^9.7.0",
+        "babel-loader": "^8.0.6",
+        "css-loader": "^3.2.0",
+        "eslint": "^6.6.0",
+        "eslint-config-standard": "^14.1.0",
+        "eslint-loader": "^3.0.2",
+        "eslint-plugin-import": "^2.18.2",
+        "eslint-plugin-node": "^10.0.0",
+        "eslint-plugin-promise": "^4.2.1",
+        "eslint-plugin-standard": "^4.0.1",
+        "html-webpack-plugin": "^3.2.0",
+        "path": "^0.12.7",
+        "postcss-loader": "^3.0.0",
+        "style-loader": "^1.0.0",
+        "terser-webpack-plugin": "^2.2.1",
+        "webpack": "^4.41.2",
+        "webpack-cli": "^3.3.9",
+        "webpack-dev-server": "^3.9.0"
+    },
+    "dependencies": {
+        "simplebar": "^5.0.4"
+    }
+}
