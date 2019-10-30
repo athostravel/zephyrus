@@ -5,8 +5,7 @@
     "main": "build/build.js",
     "scripts": {
         "dev": "rimraf build && webpack-dev-server",
-        "build": "rimraf build && webpack --production --progress",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "build": "rimraf build && webpack --production --progress"
     },
     "repository": {
         "type": "git",
