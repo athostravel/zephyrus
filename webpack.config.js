@@ -9,13 +9,15 @@ const webpackConfig = (env) => {
     let options = {
         stats: 'minimal',
         entry: {
-            build: './src/index.js',
+            zephyrus: './src/index.js',
             demo: './trash/demo.js'
         },
         output: {
             path: resolve('./build'),
             filename: '[name].js',
-            publicPath: publicPath
+            publicPath: publicPath,
+            library: 'zephyrus',
+            libraryTarget: 'umd'
         },
         resolve: {
             extensions: ['.js', '.json'],
