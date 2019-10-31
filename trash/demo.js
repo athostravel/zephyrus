@@ -1,4 +1,4 @@
-import { Scrollbar } from '@'
+import { ScrollBar } from '@'
 
-const a = new Scrollbar(document.querySelector('#caca'))
+const a = new ScrollBar(document.querySelector('#test'))
 console.log(a)

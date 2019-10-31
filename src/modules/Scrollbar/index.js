@@ -2,11 +2,25 @@ import SimpleBar from 'simplebar'
 import 'simplebar/dist/simplebar.css'
 
 export default class ScrollBar {
-    constructor (el, options = {}) {
-        this.scrollbar = new SimpleBar(el, Object.assign(options, {}))
+    constructor (selector, options = {}) {
+        this.selector = selector
+        this.options = options
+        this.init()
     }
 
-    getScrollBar () {
-        return this.scrollbar
+    init () {
+        this.createScrollBar()
+    }
+
+    createScrollBar () {
+        if (this.selector && this.selector.length !== undefined) {
+            this.selector.forEach(el => this.getPluginInstance(el))
+        } else if (this.selector) {
+            this.getPluginInstance()
+        }
+    }
+
+    getPluginInstance (el = this.selector) {
+        return new SimpleBar(el, this.options)
     }
 }
