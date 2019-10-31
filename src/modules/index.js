@@ -1,4 +1,4 @@
-import ScrollBar from '@/modules/ScrollBar'
+import ScrollBar from './ScrollBar'
 
 export {
     ScrollBar
