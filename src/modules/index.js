@@ -1,5 +1,5 @@
-import Scrollbar from '@/modules/Scrollbar'
+import ScrollBar from '@/modules/ScrollBar'
 
 export {
-    Scrollbar
+    ScrollBar
 }
